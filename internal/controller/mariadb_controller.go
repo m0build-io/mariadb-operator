@@ -141,10 +141,10 @@ func (r *MariaDBReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ct
 			Name:      "Suspend",
 			Reconcile: r.reconcileSuspend,
 		},
-		{
-			Name:      "Secret",
-			Reconcile: r.reconcileSecret,
-		},
+		// {
+		// 	Name:      "Secret",
+		// 	Reconcile: r.reconcileSecret,
+		// },
 		{
 			Name:      "ConfigMap",
 			Reconcile: r.reconcileConfigMap,
